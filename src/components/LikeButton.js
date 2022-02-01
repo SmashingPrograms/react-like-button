@@ -3,10 +3,10 @@ function LikeButton({numCount, count}){
       button.preventDefault();
       numCount();
   };
-  
+
   return (
       <button onClick={click} type="submit">
-          <span>{count} likes</span>
+          <span>{count} { count === 1 ? "Like" : "Likes" }</span>
       </button>
   );
 };
